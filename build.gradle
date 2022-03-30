@@ -1,0 +1,37 @@
+// GENERATED BUILD SCRIPT
+import org.gradle.util.GradleVersion
+
+if (GradleVersion.current().baseVersion >= GradleVersion.version('4.6')) {
+    apply plugin: 'swiftpm-export'
+}
+if (GradleVersion.current().baseVersion >= GradleVersion.version('6.2.1')) {
+    apply plugin: 'dev.nokee.cpp-application'
+}
+
+allprojects {
+    apply plugin: 'idea'
+    apply plugin: 'eclipse'
+    if (GradleVersion.current().baseVersion >= GradleVersion.version('4.2')) {
+        apply plugin: 'xcode'
+    }
+    apply plugin: 'visual-studio'
+    apply plugin: 'maven-publish'
+
+    group = 'test'
+    version = '1.0.0'
+
+    publishing {
+        repositories {
+            maven {
+                url = rootProject.file('repo')
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation project(':lib1api1')
+    implementation project(':lib1api2')
+    implementation project(':lib1api3')
+}
+

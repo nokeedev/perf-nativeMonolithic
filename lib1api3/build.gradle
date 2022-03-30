@@ -1,0 +1,12 @@
+// GENERATED BUILD SCRIPT
+import org.gradle.util.GradleVersion
+
+apply plugin: 'dev.nokee.cpp-library'
+
+dependencies {
+    implementation project(':lib1impl')
+    implementation project(':lib2api1')
+    implementation project(':lib2api2')
+    implementation project(':lib2api3')
+}
+

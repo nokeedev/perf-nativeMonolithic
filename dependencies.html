@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { font-family: sans-serif; margin: 40px; }
+div.mermaid { margin-bottom: 40px; }
+</style>
+</head>
+<body>
+<h2>Build dependencies</h2>
+<div class="mermaid">
+graph LR
+  testApp
+</div>
+<h2>Project dependencies</h2>
+<div class="mermaid">
+graph LR
+  subgraph testApp
+  lib17api1
+  lib8api3
+  lib8core2
+  lib14core2
+  lib4impl
+  lib13api1
+  lib13impl
+  lib15impl
+  lib15core2
+  lib10impl
+  lib2api1
+  lib4api1
+  lib5api3
+  lib14core1
+  lib15api3
+  lib13api2
+  lib4api3
+  lib7api2
+  lib10api2
+  lib16core1
+  lib5core1
+  lib16api3
+  lib1api1
+  lib15core1
+  lib4core2
+  lib16core2
+  lib5impl
+  lib17core
+  lib4api2
+  lib3core1
+  lib12core2
+  lib8core1
+  lib1api3
+  lib11impl
+  lib2core2
+  lib12impl
+  lib7api1
+  lib14api1
+  lib13api3
+  lib16impl
+  lib14impl
+  lib8api2
+  lib6api2
+  lib1core2
+  lib10api1
+  lib10api3
+  lib2api3
+  lib2core1
+  lib12api1
+  lib6api3
+  lib3impl
+  lib1core1
+  lib9api3
+  lib8impl
+  lib3api2
+  lib13core2
+  lib11core1
+  lib14api2
+  lib9api1
+  lib12api2
+  lib11core2
+  testApp
+  lib1impl
+  lib10core2
+  lib6impl
+  lib7core1
+  lib14api3
+  lib7core2
+  lib11api2
+  lib13core1
+  lib15api2
+  lib3api3
+  lib9api2
+  lib9core2
+  lib5api2
+  lib5api1
+  lib11api3
+  lib5core2
+  lib6core2
+  lib4core1
+  lib10core1
+  lib9core1
+  lib8api1
+  lib17api2
+  lib15api1
+  lib1api2
+  lib6api1
+  lib7api3
+  lib6core1
+  lib9impl
+  lib12api3
+  lib3core2
+  lib16api1
+  lib16api2
+  lib7impl
+  lib2api2
+  lib3api1
+  lib11api1
+  lib12core1
+  lib2impl
+  end
+  lib17api1 --> lib17core
+  lib8api3 --> lib8impl
+  lib8api3 --> lib9api1
+  lib8api3 --> lib9api2
+  lib8api3 --> lib9api3
+  lib4impl --> lib4core1
+  lib4impl --> lib4core2
+  lib4impl --> lib5api1
+  lib4impl --> lib5api2
+  lib4impl --> lib5api3
+  lib13api1 -- API --> lib14api1
+  lib13api1 --> lib13impl
+  lib13api1 --> lib14api2
+  lib13api1 --> lib14api3
+  lib13impl --> lib13core1
+  lib13impl --> lib13core2
+  lib13impl --> lib14api1
+  lib13impl --> lib14api2
+  lib13impl --> lib14api3
+  lib15impl --> lib15core1
+  lib15impl --> lib15core2
+  lib15impl --> lib16api1
+  lib15impl --> lib16api2
+  lib15impl --> lib16api3
+  lib10impl --> lib10core1
+  lib10impl --> lib10core2
+  lib10impl --> lib11api1
+  lib10impl --> lib11api2
+  lib10impl --> lib11api3
+  lib2api1 -- API --> lib3api1
+  lib2api1 --> lib2impl
+  lib2api1 --> lib3api2
+  lib2api1 --> lib3api3
+  lib4api1 -- API --> lib5api1
+  lib4api1 --> lib4impl
+  lib4api1 --> lib5api2
+  lib4api1 --> lib5api3
+  lib5api3 --> lib5impl
+  lib5api3 --> lib6api1
+  lib5api3 --> lib6api2
+  lib5api3 --> lib6api3
+  lib15api3 --> lib15impl
+  lib15api3 --> lib16api1
+  lib15api3 --> lib16api2
+  lib15api3 --> lib16api3
+  lib13api2 --> lib13impl
+  lib13api2 --> lib14api1
+  lib13api2 --> lib14api2
+  lib13api2 --> lib14api3
+  lib4api3 --> lib4impl
+  lib4api3 --> lib5api1
+  lib4api3 --> lib5api2
+  lib4api3 --> lib5api3
+  lib7api2 --> lib7impl
+  lib7api2 --> lib8api1
+  lib7api2 --> lib8api2
+  lib7api2 --> lib8api3
+  lib10api2 --> lib10impl
+  lib10api2 --> lib11api1
+  lib10api2 --> lib11api2
+  lib10api2 --> lib11api3
+  lib16api3 --> lib16impl
+  lib16api3 --> lib17api1
+  lib16api3 --> lib17api2
+  lib1api1 -- API --> lib2api1
+  lib1api1 --> lib1impl
+  lib1api1 --> lib2api2
+  lib1api1 --> lib2api3
+  lib5impl --> lib5core1
+  lib5impl --> lib5core2
+  lib5impl --> lib6api1
+  lib5impl --> lib6api2
+  lib5impl --> lib6api3
+  lib4api2 --> lib4impl
+  lib4api2 --> lib5api1
+  lib4api2 --> lib5api2
+  lib4api2 --> lib5api3
+  lib1api3 --> lib1impl
+  lib1api3 --> lib2api1
+  lib1api3 --> lib2api2
+  lib1api3 --> lib2api3
+  lib11impl --> lib11core1
+  lib11impl --> lib11core2
+  lib11impl --> lib12api1
+  lib11impl --> lib12api2
+  lib11impl --> lib12api3
+  lib12impl --> lib12core1
+  lib12impl --> lib12core2
+  lib12impl --> lib13api1
+  lib12impl --> lib13api2
+  lib12impl --> lib13api3
+  lib7api1 -- API --> lib8api1
+  lib7api1 --> lib7impl
+  lib7api1 --> lib8api2
+  lib7api1 --> lib8api3
+  lib14api1 -- API --> lib15api1
+  lib14api1 --> lib14impl
+  lib14api1 --> lib15api2
+  lib14api1 --> lib15api3
+  lib13api3 --> lib13impl
+  lib13api3 --> lib14api1
+  lib13api3 --> lib14api2
+  lib13api3 --> lib14api3
+  lib16impl --> lib16core1
+  lib16impl --> lib16core2
+  lib16impl --> lib17api1
+  lib16impl --> lib17api2
+  lib14impl --> lib14core1
+  lib14impl --> lib14core2
+  lib14impl --> lib15api1
+  lib14impl --> lib15api2
+  lib14impl --> lib15api3
+  lib8api2 --> lib8impl
+  lib8api2 --> lib9api1
+  lib8api2 --> lib9api2
+  lib8api2 --> lib9api3
+  lib6api2 --> lib6impl
+  lib6api2 --> lib7api1
+  lib6api2 --> lib7api2
+  lib6api2 --> lib7api3
+  lib10api1 -- API --> lib11api1
+  lib10api1 --> lib10impl
+  lib10api1 --> lib11api2
+  lib10api1 --> lib11api3
+  lib10api3 --> lib10impl
+  lib10api3 --> lib11api1
+  lib10api3 --> lib11api2
+  lib10api3 --> lib11api3
+  lib2api3 --> lib2impl
+  lib2api3 --> lib3api1
+  lib2api3 --> lib3api2
+  lib2api3 --> lib3api3
+  lib12api1 -- API --> lib13api1
+  lib12api1 --> lib12impl
+  lib12api1 --> lib13api2
+  lib12api1 --> lib13api3
+  lib6api3 --> lib6impl
+  lib6api3 --> lib7api1
+  lib6api3 --> lib7api2
+  lib6api3 --> lib7api3
+  lib3impl --> lib3core1
+  lib3impl --> lib3core2
+  lib3impl --> lib4api1
+  lib3impl --> lib4api2
+  lib3impl --> lib4api3
+  lib9api3 --> lib9impl
+  lib9api3 --> lib10api1
+  lib9api3 --> lib10api2
+  lib9api3 --> lib10api3
+  lib8impl --> lib8core1
+  lib8impl --> lib8core2
+  lib8impl --> lib9api1
+  lib8impl --> lib9api2
+  lib8impl --> lib9api3
+  lib3api2 --> lib3impl
+  lib3api2 --> lib4api1
+  lib3api2 --> lib4api2
+  lib3api2 --> lib4api3
+  lib14api2 --> lib14impl
+  lib14api2 --> lib15api1
+  lib14api2 --> lib15api2
+  lib14api2 --> lib15api3
+  lib9api1 -- API --> lib10api1
+  lib9api1 --> lib9impl
+  lib9api1 --> lib10api2
+  lib9api1 --> lib10api3
+  lib12api2 --> lib12impl
+  lib12api2 --> lib13api1
+  lib12api2 --> lib13api2
+  lib12api2 --> lib13api3
+  testApp --> lib1api1
+  testApp --> lib1api2
+  testApp --> lib1api3
+  lib1impl --> lib1core1
+  lib1impl --> lib1core2
+  lib1impl --> lib2api1
+  lib1impl --> lib2api2
+  lib1impl --> lib2api3
+  lib6impl --> lib6core1
+  lib6impl --> lib6core2
+  lib6impl --> lib7api1
+  lib6impl --> lib7api2
+  lib6impl --> lib7api3
+  lib14api3 --> lib14impl
+  lib14api3 --> lib15api1
+  lib14api3 --> lib15api2
+  lib14api3 --> lib15api3
+  lib11api2 --> lib11impl
+  lib11api2 --> lib12api1
+  lib11api2 --> lib12api2
+  lib11api2 --> lib12api3
+  lib15api2 --> lib15impl
+  lib15api2 --> lib16api1
+  lib15api2 --> lib16api2
+  lib15api2 --> lib16api3
+  lib3api3 --> lib3impl
+  lib3api3 --> lib4api1
+  lib3api3 --> lib4api2
+  lib3api3 --> lib4api3
+  lib9api2 --> lib9impl
+  lib9api2 --> lib10api1
+  lib9api2 --> lib10api2
+  lib9api2 --> lib10api3
+  lib5api2 --> lib5impl
+  lib5api2 --> lib6api1
+  lib5api2 --> lib6api2
+  lib5api2 --> lib6api3
+  lib5api1 -- API --> lib6api1
+  lib5api1 --> lib5impl
+  lib5api1 --> lib6api2
+  lib5api1 --> lib6api3
+  lib11api3 --> lib11impl
+  lib11api3 --> lib12api1
+  lib11api3 --> lib12api2
+  lib11api3 --> lib12api3
+  lib8api1 -- API --> lib9api1
+  lib8api1 --> lib8impl
+  lib8api1 --> lib9api2
+  lib8api1 --> lib9api3
+  lib17api2 --> lib17core
+  lib15api1 -- API --> lib16api1
+  lib15api1 --> lib15impl
+  lib15api1 --> lib16api2
+  lib15api1 --> lib16api3
+  lib1api2 --> lib1impl
+  lib1api2 --> lib2api1
+  lib1api2 --> lib2api2
+  lib1api2 --> lib2api3
+  lib6api1 -- API --> lib7api1
+  lib6api1 --> lib6impl
+  lib6api1 --> lib7api2
+  lib6api1 --> lib7api3
+  lib7api3 --> lib7impl
+  lib7api3 --> lib8api1
+  lib7api3 --> lib8api2
+  lib7api3 --> lib8api3
+  lib9impl --> lib9core1
+  lib9impl --> lib9core2
+  lib9impl --> lib10api1
+  lib9impl --> lib10api2
+  lib9impl --> lib10api3
+  lib12api3 --> lib12impl
+  lib12api3 --> lib13api1
+  lib12api3 --> lib13api2
+  lib12api3 --> lib13api3
+  lib16api1 -- API --> lib17api1
+  lib16api1 --> lib16impl
+  lib16api1 --> lib17api2
+  lib16api2 --> lib16impl
+  lib16api2 --> lib17api1
+  lib16api2 --> lib17api2
+  lib7impl --> lib7core1
+  lib7impl --> lib7core2
+  lib7impl --> lib8api1
+  lib7impl --> lib8api2
+  lib7impl --> lib8api3
+  lib2api2 --> lib2impl
+  lib2api2 --> lib3api1
+  lib2api2 --> lib3api2
+  lib2api2 --> lib3api3
+  lib3api1 -- API --> lib4api1
+  lib3api1 --> lib3impl
+  lib3api1 --> lib4api2
+  lib3api1 --> lib4api3
+  lib11api1 -- API --> lib12api1
+  lib11api1 --> lib11impl
+  lib11api1 --> lib12api2
+  lib11api1 --> lib12api3
+  lib2impl --> lib2core1
+  lib2impl --> lib2core2
+  lib2impl --> lib3api1
+  lib2impl --> lib3api2
+  lib2impl --> lib3api3
+</div>
+<script src="https://unpkg.com/mermaid@8.0.0-rc.8/dist/mermaid.min.js"></script>
+<script>
+mermaid.initialize({startOnLoad:true});
+</script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+// GENERATED SCENARIO FILE
+
+assemble {
+    gradle-args = ["--parallel"]
+    tasks = ["assemble"]
+}
+
+assembleInstantExecution {
+    gradle-args = ["--parallel", "-Dorg.gradle.unsafe.instant-execution=true"]
+    tasks = ["assemble"]
+}
+
+assembleDryRun {
+    gradle-args = ["--parallel", "--dry-run"]
+    tasks = ["assemble"]
+}
+
+assembleInstantExecutionDryRun {
+    gradle-args = ["--parallel", "--dry-run", "-Dorg.gradle.unsafe.instant-execution=true"]
+    tasks = ["assemble"]
+}
+
+build {
+    gradle-args = ["--parallel"]
+    tasks = ["build"]
+}
+
+buildInstantExecution {
+    gradle-args = ["--parallel", "-Dorg.gradle.unsafe.instant-execution=true"]
+    tasks = ["build"]
+}
+
+buildDryRun {
+    gradle-args = ["--parallel", "--dry-run"]
+    tasks = ["build"]
+}
+
+buildInstantExecutionDryRun {
+    gradle-args = ["--parallel", "--dry-run", "-Dorg.gradle.unsafe.instant-execution=true"]
+    tasks = ["build"]
+}
+
+cleanAssemble {
+    gradle-args = ["--parallel"]
+    cleanup-tasks = ["clean"]
+    tasks = ["assemble"]
+}
+
+cleanAssembleInstantExecution {
+    gradle-args = ["--parallel", "-Dorg.gradle.unsafe.instant-execution=true"]
+    cleanup-tasks = ["clean"]
+    tasks = ["assemble"]
+}
+
+cleanAssembleDryRun {
+    gradle-args = ["--parallel", "--dry-run"]
+    cleanup-tasks = ["clean"]
+    tasks = ["assemble"]
+}
+
+cleanAssembleInstantExecutionDryRun {
+    gradle-args = ["--parallel", "--dry-run", "-Dorg.gradle.unsafe.instant-execution=true"]
+    cleanup-tasks = ["clean"]
+    tasks = ["assemble"]
+}
+
+abiAssemble {
+    gradle-args = ["--parallel"]
+    tasks = ["assemble"]
+    apply-h-change-to = "lib17core/src/main/public/lib17core.h"
+}
+
+abiAssembleInstantExecution {
+    gradle-args = ["--parallel", "-Dorg.gradle.unsafe.instant-execution=true"]
+    tasks = ["assemble"]
+    apply-h-change-to = "lib17core/src/main/public/lib17core.h"
+}
+
+abiAssembleDryRun {
+    gradle-args = ["--parallel", "--dry-run"]
+    tasks = ["assemble"]
+    apply-h-change-to = "lib17core/src/main/public/lib17core.h"
+}
+
+abiAssembleInstantExecutionDryRun {
+    gradle-args = ["--parallel", "--dry-run", "-Dorg.gradle.unsafe.instant-execution=true"]
+    tasks = ["assemble"]
+    apply-h-change-to = "lib17core/src/main/public/lib17core.h"
+}
+
+nonAbiAssemble {
+    gradle-args = ["--parallel"]
+    tasks = ["assemble"]
+    apply-cpp-change-to = "lib17core/src/main/cpp/lib17core.cpp"
+}
+
+nonAbiAssembleInstantExecution {
+    gradle-args = ["--parallel", "-Dorg.gradle.unsafe.instant-execution=true"]
+    tasks = ["assemble"]
+    apply-cpp-change-to = "lib17core/src/main/cpp/lib17core.cpp"
+}
+
+nonAbiAssembleDryRun {
+    gradle-args = ["--parallel", "--dry-run"]
+    tasks = ["assemble"]
+    apply-cpp-change-to = "lib17core/src/main/cpp/lib17core.cpp"
+}
+
+nonAbiAssembleInstantExecutionDryRun {
+    gradle-args = ["--parallel", "--dry-run", "-Dorg.gradle.unsafe.instant-execution=true"]
+    tasks = ["assemble"]
+    apply-cpp-change-to = "lib17core/src/main/cpp/lib17core.cpp"
+}
+

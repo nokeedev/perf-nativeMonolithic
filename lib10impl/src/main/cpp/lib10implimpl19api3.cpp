@@ -1,0 +1,70 @@
+// GENERATED SOURCE FILE
+
+#include "lib10impl_private.h"
+#include "lib10impl_impl.h"
+#include "lib10core1.h"
+#include "lib10core2.h"
+#include "lib11api1.h"
+#include "lib11api2.h"
+#include "lib11api3.h"
+#include <iostream>
+#include <stdio.h>
+
+/*
+ * Here is a function.
+ */
+int lib10implimpl19api31(int a, int b) {
+    return a + b;
+}
+
+/*
+ * Here is a function.
+ */
+int lib10implimpl19api32(int a, int b) {
+    return a + b;
+}
+
+/*
+ * Here is a function.
+ */
+int lib10implimpl19api33(int a, int b) {
+    return a + b;
+}
+
+/*
+ * Here is a function.
+ */
+int lib10implimpl19api34(int a, int b) {
+    return a + b;
+}
+
+int Lib10ImplImpl19Api3::visited = 0;
+
+/*
+ * Here is a function.
+ */
+void Lib10ImplImpl19Api3::doSomething() {
+    if (visited == 0) {
+        std::cout << "visit Lib10ImplImpl19Api3" << std::endl;
+        Lib10Core1 lib10core1;
+        lib10core1.doSomething();
+        Lib10Core2 lib10core2;
+        lib10core2.doSomething();
+        Lib11Api1 lib11api1;
+        lib11api1.doSomething();
+        Lib11Api2 lib11api2;
+        lib11api2.doSomething();
+        Lib11Api3 lib11api3;
+        lib11api3.doSomething();
+        Lib10ImplImpl19Impl lib10implimpl19impl;
+        lib10implimpl19impl.doSomething();
+        Lib10ImplImpl20Api1 lib10implimpl20api1;
+        lib10implimpl20api1.doSomething();
+        Lib10ImplImpl20Api2 lib10implimpl20api2;
+        lib10implimpl20api2.doSomething();
+        Lib10ImplImpl20Api3 lib10implimpl20api3;
+        lib10implimpl20api3.doSomething();
+        visited = 1;
+    }
+}
+

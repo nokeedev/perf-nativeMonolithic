@@ -1,0 +1,5 @@
+// GENERATED BUILD SCRIPT
+import org.gradle.util.GradleVersion
+
+apply plugin: 'dev.nokee.cpp-library'
+

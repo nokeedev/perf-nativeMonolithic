@@ -1,0 +1,72 @@
+// GENERATED SOURCE FILE
+
+#include "lib14impl_private.h"
+#include "lib14impl_impl.h"
+#include "lib14core1.h"
+#include "lib14core2.h"
+#include "lib15api1.h"
+#include "lib15api2.h"
+#include "lib15api3.h"
+#include <iostream>
+#include <stdio.h>
+
+/*
+ * Here is a function.
+ */
+int lib14implimpl8impl1(int a, int b) {
+    return a + b;
+}
+
+/*
+ * Here is a function.
+ */
+int lib14implimpl8impl2(int a, int b) {
+    return a + b;
+}
+
+/*
+ * Here is a function.
+ */
+int lib14implimpl8impl3(int a, int b) {
+    return a + b;
+}
+
+/*
+ * Here is a function.
+ */
+int lib14implimpl8impl4(int a, int b) {
+    return a + b;
+}
+
+int Lib14ImplImpl8Impl::visited = 0;
+
+/*
+ * Here is a function.
+ */
+void Lib14ImplImpl8Impl::doSomething() {
+    if (visited == 0) {
+        std::cout << "visit Lib14ImplImpl8Impl" << std::endl;
+        Lib14Core1 lib14core1;
+        lib14core1.doSomething();
+        Lib14Core2 lib14core2;
+        lib14core2.doSomething();
+        Lib15Api1 lib15api1;
+        lib15api1.doSomething();
+        Lib15Api2 lib15api2;
+        lib15api2.doSomething();
+        Lib15Api3 lib15api3;
+        lib15api3.doSomething();
+        Lib14ImplImpl8Core1 lib14implimpl8core1;
+        lib14implimpl8core1.doSomething();
+        Lib14ImplImpl8Core2 lib14implimpl8core2;
+        lib14implimpl8core2.doSomething();
+        Lib14ImplImpl9Api1 lib14implimpl9api1;
+        lib14implimpl9api1.doSomething();
+        Lib14ImplImpl9Api2 lib14implimpl9api2;
+        lib14implimpl9api2.doSomething();
+        Lib14ImplImpl9Api3 lib14implimpl9api3;
+        lib14implimpl9api3.doSomething();
+        visited = 1;
+    }
+}
+

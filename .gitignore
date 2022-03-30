@@ -1,0 +1,13 @@
+build
+.gradle
+.build
+*.xcodeproj
+*.xcworkspace
+.vs
+*.sln
+*.sdf
+*.vcxproj
+*.vcxproj.filters
+*.ipr
+*.iws
+*.iml
